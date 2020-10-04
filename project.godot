@@ -14,7 +14,12 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/ai/code.gd"
 }, {
-"base": "Reference",
+"base": "Node2D",
+"class": "CodeRunner",
+"language": "GDScript",
+"path": "res://robot/Node2D.gd"
+}, {
+"base": "Statement",
 "class": "MoveStatement",
 "language": "GDScript",
 "path": "res://src/ai/move_statement.gd"
@@ -25,21 +30,22 @@ _global_script_classes=[ {
 "path": "res://robot/robot.gd"
 }, {
 "base": "Reference",
-"class": "RotateStatement",
-"language": "GDScript",
-"path": "res://src/ai/rotate_statement.gd"
-}, {
-"base": "Reference",
 "class": "Statement",
 "language": "GDScript",
 "path": "res://src/ai/statement.gd"
+}, {
+"base": "Statement",
+"class": "TurnStatement",
+"language": "GDScript",
+"path": "res://src/ai/turn_statement.gd"
 } ]
 _global_script_class_icons={
 "Code": "",
+"CodeRunner": "",
 "MoveStatement": "",
 "Robot": "",
-"RotateStatement": "",
-"Statement": ""
+"Statement": "",
+"TurnStatement": ""
 }
 
 [application]

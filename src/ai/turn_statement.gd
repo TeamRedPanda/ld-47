@@ -1,4 +1,4 @@
-class_name RotateStatement
+class_name TurnStatement
 extends Statement
 
 var _amount: int = 0
@@ -9,4 +9,4 @@ func _init(amount: int):
 
 
 func _execute(actor: Robot):
-	actor.rotate(_amount)
+	actor.turn(_amount)
