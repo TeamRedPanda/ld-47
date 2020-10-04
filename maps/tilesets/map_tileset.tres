@@ -3,11 +3,6 @@
 [ext_resource path="res://shaders/pulsating_glow_shader.tres" type="Shader" id=2]
 [ext_resource path="res://maps/sprites/map.png" type="Texture" id=3]
 
-
-
-
-
-
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 2 )
 shader_param/Intensity = 1.2
