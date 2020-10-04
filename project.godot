@@ -8,9 +8,38 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Reference",
+"class": "Code",
+"language": "GDScript",
+"path": "res://src/ai/code.gd"
+}, {
+"base": "Reference",
+"class": "MoveStatement",
+"language": "GDScript",
+"path": "res://src/ai/move_statement.gd"
+}, {
+"base": "Node2D",
+"class": "Robot",
+"language": "GDScript",
+"path": "res://robot/robot.gd"
+}, {
+"base": "Reference",
+"class": "RotateStatement",
+"language": "GDScript",
+"path": "res://src/ai/rotate_statement.gd"
+}, {
+"base": "Reference",
+"class": "Statement",
+"language": "GDScript",
+"path": "res://src/ai/statement.gd"
+} ]
 _global_script_class_icons={
-
+"Code": "",
+"MoveStatement": "",
+"Robot": "",
+"RotateStatement": "",
+"Statement": ""
 }
 
 [application]
