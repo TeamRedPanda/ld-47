@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://maps/tilesets/map_tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://maps/tilesets/object_tileset.tres" type="TileSet" id=2]
+[ext_resource path="res://levels/object_scenes.gd" type="Script" id=3]
+[ext_resource path="res://robot/robot.tscn" type="PackedScene" id=4]
+
+[node name="Level" type="Node2D"]
+
+[node name="Walls" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_tile_origin = 1
+format = 1
+
+[node name="Goals" type="TileMap" parent="."]
+tile_set = ExtResource( 2 )
+cell_tile_origin = 1
+format = 1
+
+[node name="Objects" type="TileMap" parent="."]
+tile_set = ExtResource( 2 )
+cell_tile_origin = 1
+format = 1
+
+[node name="Object Scenes" type="Node2D" parent="."]
+script = ExtResource( 3 )
+robot_scene = ExtResource( 4 )

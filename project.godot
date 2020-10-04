@@ -9,20 +9,25 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Node",
+"class": "BaseLevel",
+"language": "GDScript",
+"path": "res://levels/base_level.gd"
+}, {
 "base": "Reference",
 "class": "Code",
 "language": "GDScript",
 "path": "res://src/ai/code.gd"
 }, {
-"base": "Node2D",
-"class": "CodeRunner",
-"language": "GDScript",
-"path": "res://robot/Node2D.gd"
-}, {
 "base": "Statement",
 "class": "MoveStatement",
 "language": "GDScript",
 "path": "res://src/ai/move_statement.gd"
+}, {
+"base": "Node2D",
+"class": "ObjectScenes",
+"language": "GDScript",
+"path": "res://levels/object_scenes.gd"
 }, {
 "base": "Node2D",
 "class": "Robot",
@@ -40,9 +45,10 @@ _global_script_classes=[ {
 "path": "res://src/ai/turn_statement.gd"
 } ]
 _global_script_class_icons={
+"BaseLevel": "",
 "Code": "",
-"CodeRunner": "",
 "MoveStatement": "",
+"ObjectScenes": "",
 "Robot": "",
 "Statement": "",
 "TurnStatement": ""

@@ -2,7 +2,7 @@ class_name Statement
 
 signal executed
 
-func _execute(actor: Robot):
+func _execute(_actor: Robot):
 	pass
 
 
