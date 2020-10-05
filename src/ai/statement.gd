@@ -2,15 +2,12 @@ class_name Statement
 
 signal executed
 
-func _execute(_actor: Robot):
-	pass
+func _execute(_actor: Robot) -> bool:
+	return true
 
 
 func execute(actor: Robot):
-	_execute(actor)
-	wait_execution(actor)
+	var should_advance = _execute(actor)
 
-
-func wait_execution(actor: Robot):
 	yield(actor, "command_executed")
-	emit_signal("executed")
+	emit_signal("executed", should_advance)

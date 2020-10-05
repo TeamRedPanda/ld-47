@@ -13,10 +13,11 @@ func reset():
 	_current_index = 0
 
 
-func execute_and_advance(actor: Robot):
+func step(actor: Robot):
 	var stmt = statements[_current_index]
 	stmt.execute(actor)
 
-	_current_index = (_current_index + 1) % len(statements)
+	var should_advance = yield(stmt, "executed")
 
-	yield(stmt, "executed")
+	if should_advance:
+		_current_index = (_current_index + 1) % len(statements)

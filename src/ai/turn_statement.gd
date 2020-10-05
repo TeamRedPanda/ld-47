@@ -8,5 +8,6 @@ func _init(amount: int):
 	_amount = amount
 
 
-func _execute(actor: Robot):
+func _execute(actor: Robot) -> bool:
 	actor.turn(_amount)
+	return true

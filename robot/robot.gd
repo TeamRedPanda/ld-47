@@ -8,15 +8,22 @@ onready var _tween: Tween = $Tween
 const _move_distance: int = 64
 var _look_direction: Vector2 = Vector2(1, 0)
 
+var level
+
 
 func move(steps: int):
-	var final_pos := position + _look_direction * steps * _move_distance
+	for _i in range(steps):
+		var final_pos := position + _look_direction * _move_distance
 
-	_tween.interpolate_property(self, "position", position, final_pos, 1, Tween.TRANS_CUBIC, Tween.EASE_IN_OUT)
-	_tween.start()
+		if not level.move(position, _look_direction):
+			continue
 
-	yield(_tween, "tween_completed")
+		_tween.interpolate_property(self, "position", position, final_pos, 0.6, Tween.TRANS_CUBIC, Tween.EASE_IN_OUT)
+		_tween.start()
 
+		yield(_tween, "tween_completed")
+
+	yield(get_tree(), "idle_frame")
 	emit_signal("command_executed")
 
 
