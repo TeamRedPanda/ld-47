@@ -28,8 +28,6 @@ func move(steps: int):
 
 			continue
 		SoundController.play_sound("Move Sound")
-
-		SoundController.play_sound("Move Sound")
 		#warning-ignore:RETURN_VALUE_DISCARDED
 		_tween.interpolate_property(self, "position", position, final_pos, 0.6, Tween.TRANS_CUBIC, Tween.EASE_IN_OUT)
 		#warning-ignore:RETURN_VALUE_DISCARDED
