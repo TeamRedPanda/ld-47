@@ -5,7 +5,7 @@ signal step_finished
 signal pause_state(state)
 
 var code: Code = null
-var _paused: bool = true
+var _paused: bool = true setget set_paused
 
 
 # Called when the node enters the scene tree for the first time.
@@ -25,9 +25,13 @@ func _process(_delta: float) -> void:
 	set_process(true)
 
 
-func toggle_pause():
-	_paused = not _paused
+func set_paused(paused):
+	_paused = paused
 	emit_signal("pause_state", _paused)
+
+
+func toggle_pause():
+	self._paused = not _paused
 
 
 func step():

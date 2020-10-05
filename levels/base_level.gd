@@ -23,7 +23,7 @@ func check_win():
 		if $Objects.is_empty(goal):
 			return
 
-	print("Win!")
+	_code_runner._paused = true
 
 
 func get_goals(map: TileMap):
