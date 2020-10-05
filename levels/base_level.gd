@@ -5,8 +5,6 @@ enum ObjectType {Empty = -1, Robot, Solid, Movable, Goal}
 
 var _code: Code = null
 var _goals = []
-var _objects = []
-var _robot: Robot = null
 
 var _paused: bool = false
 
@@ -30,47 +28,12 @@ func toggle_pause():
 
 
 func step():
-	yield(_code.step(_robot), "completed")
+	yield(_code.step($Objects.robot), "completed")
 
 
 func reset():
 	if get_tree().reload_current_scene() != OK:
 		print("Panic: Somehow the current scene cannot be reloaded.")
-
-
-func instance_objects(map: TileMap, scenes: ObjectScenes):
-	var cells = map.get_used_cells()
-	for cell in cells:
-		var cell_id := int(map.get_cellv(cell))
-		var cell_position := map.map_to_world(cell) + map.cell_size / 2
-
-		var scene_to_instance = null
-		match cell_id:
-			ObjectType.Robot:
-				scene_to_instance = scenes.robot_scene
-			ObjectType.Solid:
-				scene_to_instance = scenes.solid_object_scene
-			ObjectType.Movable:
-				scene_to_instance = scenes.movable_object_scene
-			_:
-				print("Panic: Invalid object at position %s, id %s" %
-					[cell, cell_id])
-
-		if not scene_to_instance:
-			continue
-
-		var obj = scene_to_instance.instance()
-		obj.position = cell_position
-		add_child(obj)
-
-		if cell_id == ObjectType.Robot:
-			_robot = obj
-			_robot.level = self
-
-		if cell_id == ObjectType.Movable:
-			_objects.push_back(obj)
-
-	map.hide()
 
 
 func get_goals(map: TileMap):
@@ -95,12 +58,9 @@ func move(from:Vector2, direction: Vector2) -> bool:
 		if is_wall(behind_pos) or is_solid(behind_pos) or is_movable(behind_pos):
 			return false
 
-		for obj in _objects:
-			if object_map.world_to_map(obj.position) == to:
-				obj.move(direction)
+		$Objects.move_obj(to, direction)
 
-				object_map.set_cellv(to, ObjectType.Empty)
-				object_map.set_cellv(behind_pos, ObjectType.Movable)
+
 
 	object_map.set_cellv(from, ObjectType.Empty)
 	object_map.set_cellv(to, ObjectType.Robot)
