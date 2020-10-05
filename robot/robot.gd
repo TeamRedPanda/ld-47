@@ -25,8 +25,9 @@ func move(steps: int):
 
 			yield(shake(initial_pos, shake_pos1, 0.1), "completed")
 			yield(shake(initial_pos, shake_pos2, 0.1), "completed")
-			
+
 			continue
+		SoundController.play_sound("Move Sound")
 
 		SoundController.play_sound("Move Sound")
 		#warning-ignore:RETURN_VALUE_DISCARDED
