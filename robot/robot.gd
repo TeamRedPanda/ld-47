@@ -24,9 +24,10 @@ func move(steps: int):
 
 			yield(shake(initial_pos, shake_pos1, 0.1), "completed")
 			yield(shake(initial_pos, shake_pos2, 0.1), "completed")
-			
+
 			#SoundController.play_sound("Shake Sound")
 			continue
+		SoundController.play_sound("Move Sound")
 
 		#warning-ignore:RETURN_VALUE_DISCARDED
 		_tween.interpolate_property(self, "position", position, final_pos, 0.6, Tween.TRANS_CUBIC, Tween.EASE_IN_OUT)
@@ -34,7 +35,6 @@ func move(steps: int):
 		_tween.start()
 
 		yield(_tween, "tween_completed")
-		SoundController.play_sound("Move Sound")
 
 	yield(get_tree(), "idle_frame")
 	emit_signal("command_executed")
