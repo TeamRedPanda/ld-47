@@ -29,7 +29,7 @@ func check_win():
 			return
 
 	_code_runner._paused = true
-	SoundController.play_sound("Clear Level Sound")
+	#SoundController.play_sound("Clear Level Sound")
 	emit_signal("cleared")
 
 
