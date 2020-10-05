@@ -83,6 +83,10 @@ _global_script_class_icons={
 config/name="Ludum Dare 47"
 config/icon="res://icon.png"
 
+[autoload]
+
+SoundController="*res://sounds/sound_controller.tscn"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"

@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://sounds/ball_hitwall1.wav" type="AudioStream" id=1]
+[ext_resource path="res://sounds/sound_controller.gd" type="Script" id=2]
+
+[node name="Sound Controller" type="Node"]
+script = ExtResource( 2 )
+
+[node name="Move Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 1 )
+volume_db = -20.0
+
+[node name="Shake Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 1 )
+volume_db = -20.0
+
+[node name="Turn Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 1 )
+volume_db = -20.0
+
+[node name="Clear Level Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 1 )
+volume_db = -20.0
