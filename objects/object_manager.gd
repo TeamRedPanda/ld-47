@@ -1,5 +1,5 @@
 class_name ObjectManager
-extends TileMap
+extends Node
 
 enum ObjectType {Empty = -1, Robot, Solid, Movable, Goal}
 
@@ -9,18 +9,17 @@ var _objects = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	yield(get_parent(), "ready")
-	instance_objects(self, $Scenes)
+	instance_objects($Map, $Scenes)
 
 
 func move_obj(to: Vector2, direction: Vector2):
 	var behind_pos = to + direction
 	for obj in _objects:
-		if world_to_map(obj.position) == to:
+		if $Map.world_to_map(obj.position) == to:
 			obj.move(direction)
 
-			set_cellv(to, ObjectType.Empty)
-			set_cellv(behind_pos, ObjectType.Movable)
+			$Map.set_cellv(to, ObjectType.Empty)
+			$Map.set_cellv(behind_pos, ObjectType.Movable)
 
 
 func instance_objects(map: TileMap, scenes: ObjectScenes):
@@ -47,7 +46,7 @@ func instance_objects(map: TileMap, scenes: ObjectScenes):
 
 		var obj = scene_to_instance.instance()
 		obj.position = cell_position
-		get_parent().add_child(obj)
+		add_child(obj)
 
 		if cell_id == ObjectType.Robot:
 			robot = obj

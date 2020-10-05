@@ -5,8 +5,9 @@ extends BaseLevel
 func _ready() -> void:
 	._ready()
 
-	_code = Code.new()
-	_code.add(TurnStatement.new(-1))
-	_code.add(MoveStatement.new(3))
+	var code := Code.new()
+	code.add(TurnStatement.new(-1))
+	code.add(MoveStatement.new(3))
+	register_code(code)
 
 	get_goals($Goals)

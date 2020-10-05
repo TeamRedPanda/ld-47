@@ -3,37 +3,18 @@ extends Node
 
 enum ObjectType {Empty = -1, Robot, Solid, Movable, Goal}
 
-var _code: Code = null
 var _goals = []
 
-var _paused: bool = false
+onready var _code_runner: CodeRunner = $"Code runner"
 
 
 func _ready() -> void:
 	$Collision.hide()
 
 
-func execute_code():
-	if not _code:
-		print("Panic: Trying to call execute_call without a code object.")
-
-	_paused = false
-
-	while not _paused:
-		yield(step(), "completed")
-
-
-func toggle_pause():
-	_paused = not _paused
-
-
-func step():
-	yield(_code.step($Objects.robot), "completed")
-
-
-func reset():
-	if get_tree().reload_current_scene() != OK:
-		print("Panic: Somehow the current scene cannot be reloaded.")
+func register_code(code: Code):
+	code.actor = $Objects.robot
+	_code_runner.code = code
 
 
 func get_goals(map: TileMap):
@@ -41,7 +22,7 @@ func get_goals(map: TileMap):
 
 
 func move(from:Vector2, direction: Vector2) -> bool:
-	var object_map := get_node("Objects") as TileMap
+	var object_map := get_node("Objects/Map") as TileMap
 
 	from = object_map.world_to_map(from)
 	direction = Vector2(int(direction.x), int(direction.y))
@@ -61,7 +42,6 @@ func move(from:Vector2, direction: Vector2) -> bool:
 		$Objects.move_obj(to, direction)
 
 
-
 	object_map.set_cellv(from, ObjectType.Empty)
 	object_map.set_cellv(to, ObjectType.Robot)
 
@@ -79,14 +59,14 @@ func is_wall(position: Vector2) -> bool:
 
 
 func is_solid(position: Vector2) -> bool:
-	var object_map := get_node("Objects") as TileMap
+	var object_map := get_node("Objects/Map") as TileMap
 	var cell_type := object_map.get_cellv(position)
 
 	return cell_type == ObjectType.Solid
 
 
 func is_movable(position: Vector2) -> bool:
-	var object_map := get_node("Objects") as TileMap
+	var object_map := get_node("Objects/Map") as TileMap
 	var cell_type := object_map.get_cellv(position)
 
 	return cell_type == ObjectType.Movable

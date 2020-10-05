@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://maps/tilesets/map_tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://maps/tilesets/object_tileset.tres" type="TileSet" id=2]
@@ -7,6 +7,9 @@
 [ext_resource path="res://collision.png" type="Texture" id=5]
 [ext_resource path="res://objects/object_manager.gd" type="Script" id=6]
 [ext_resource path="res://levels/base_level.gd" type="Script" id=7]
+[ext_resource path="res://levels/code_runner.gd" type="Script" id=8]
+[ext_resource path="res://objects/solid/solid.tscn" type="PackedScene" id=9]
+[ext_resource path="res://objects/movable/movable.tscn" type="PackedScene" id=10]
 
 [sub_resource type="TileSet" id=1]
 0/name = "collision.png 0"
@@ -37,17 +40,24 @@ tile_set = ExtResource( 2 )
 cell_tile_origin = 1
 format = 1
 
-[node name="Objects" type="TileMap" parent="."]
-tile_set = ExtResource( 2 )
-cell_tile_origin = 1
-format = 1
-script = ExtResource( 6 )
-
-[node name="Scenes" type="Node2D" parent="Objects"]
-script = ExtResource( 3 )
-robot_scene = ExtResource( 4 )
-
 [node name="Collision" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
 cell_tile_origin = 1
 format = 1
+
+[node name="Objects" type="Node" parent="."]
+script = ExtResource( 6 )
+
+[node name="Map" type="TileMap" parent="Objects"]
+tile_set = ExtResource( 2 )
+cell_tile_origin = 1
+format = 1
+
+[node name="Scenes" type="Node2D" parent="Objects"]
+script = ExtResource( 3 )
+robot_scene = ExtResource( 4 )
+solid_object_scene = ExtResource( 9 )
+movable_object_scene = ExtResource( 10 )
+
+[node name="Code runner" type="Node" parent="."]
+script = ExtResource( 8 )

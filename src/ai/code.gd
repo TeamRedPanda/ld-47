@@ -4,6 +4,8 @@ class_name Code
 var statements = []
 var _current_index := 0
 
+var actor
+
 
 func add(stmt: Statement):
 	statements.push_back(stmt)
@@ -13,7 +15,7 @@ func reset():
 	_current_index = 0
 
 
-func step(actor: Robot):
+func step():
 	var stmt = statements[_current_index]
 	stmt.execute(actor)
 
