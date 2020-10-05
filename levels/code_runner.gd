@@ -1,6 +1,8 @@
 class_name CodeRunner
 extends Node
 
+signal step_finished
+
 var code: Code = null
 var _paused: bool = false
 
@@ -26,6 +28,7 @@ func toggle_pause():
 
 func step():
 	yield(code.step(), "completed")
+	emit_signal("step_finished")
 
 
 func reset():

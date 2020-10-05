@@ -12,6 +12,12 @@ func _ready() -> void:
 	instance_objects($Map, $Scenes)
 
 
+func is_empty(pos: Vector2) -> bool:
+	var map := $Map as TileMap
+	var cell_id := map.get_cellv(pos)
+	return cell_id == -1
+
+
 func move_obj(from: Vector2, to: Vector2):
 	for obj in _objects:
 		if $Map.world_to_map(obj.position) == from:

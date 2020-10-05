@@ -15,6 +15,15 @@ func _ready() -> void:
 func register_code(code: Code):
 	code.actor = $Objects.robot
 	_code_runner.code = code
+	_code_runner.connect("step_finished", self, "check_win")
+
+
+func check_win():
+	for goal in _goals:
+		if $Objects.is_empty(goal):
+			return
+
+	print("Win!")
 
 
 func get_goals(map: TileMap):
