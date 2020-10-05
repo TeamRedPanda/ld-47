@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg122"
+   sodipodi:docname="controls.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata126">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview124"
+     showgrid="false"
+     inkscape:zoom="2.612057"
+     inkscape:cx="88.758588"
+     inkscape:cy="13.407419"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g120" />
+  <defs
+     id="defs2" />
+  <g
+     id="g120">
+    <path
+       d="m 73.874559,52.276202 v -37.85 q 0,-5.1999995 5.2,-5.1999995 h 37.650001 q 5.15,0 5.15,5.1999995 v 37.85 q -0.1,4.95 -5.15,4.95 H 79.074559 q -5.1,0 -5.2,-4.95"
+       id="path30"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\pause.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128"
+       inkscape:connector-curvature="0"
+       style="fill:#383838;stroke:none" />
+    <path
+       d="m 56.724559,9.2262025 q 5.15,0 5.15,5.1999995 v 37.85 q -0.1,4.95 -5.15,4.95 h -37.65 q -5.1,0 -5.2,-4.95 v -37.85 q 0,-5.1999995 5.2,-5.1999995 h 37.65"
+       id="path32"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\step.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128"
+       inkscape:connector-curvature="0"
+       style="fill:#383838;stroke:none" />
+    <path
+       d="m 133.87456,14.426202 q 0,-5.1999995 5.2,-5.1999995 h 37.65 q 5.15,0 5.15,5.1999995 v 37.85 q -0.1,4.95 -5.15,4.95 h -37.65 q -5.1,0 -5.2,-4.95 v -37.85"
+       id="path34"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\play.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128"
+       inkscape:connector-curvature="0"
+       style="fill:#383838;stroke:none" />
+    <path
+       d="m 199.07456,9.2262025 h 37.65 q 5.15,0 5.15,5.1999995 v 37.85 q -0.1,4.95 -5.15,4.95 h -37.65 q -5.1,0 -5.2,-4.95 v -37.85 q 0,-5.1999995 5.2,-5.1999995"
+       id="path36"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\restart.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128"
+       inkscape:connector-curvature="0"
+       style="fill:#383838;stroke:none" />
+    <path
+       id="path4637"
+       d="m 152.58819,20.988822 14.53755,10.78531 h 0.0734 c 0.53844,0.44706 0.80764,0.93137 0.80764,1.45294 0,0.59608 -0.29368,1.09902 -0.88106,1.50883 l -14.53755,10.72943 -0.0734,0.0559 c -0.58737,0.40981 -1.22369,0.59608 -1.90896,0.55882 l -1.02792,-0.16764 c -1.2237,-0.3353 -1.83555,-0.96864 -1.83555,-1.90001 v -21.51473 c 0,-0.93137 0.58738,-1.58334 1.76213,-1.95589 h 0.0734 c 1.12581,-0.33529 2.12925,-0.18628 3.01031,0.44706"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;stroke:none;stroke-width:1.28109324"
+       sodipodi:nodetypes="cccscccccssccc"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\play.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128" />
+    <path
+       d="m 87.874559,21.226202 h 6 c 1.33333,0 2,0.66667 2,2 v 20 c 0,1.33333 -0.66667,2 -2,2 h -6 c -1.333333,0 -2,-0.66667 -2,-2 v -20 c 0,-1.33333 0.666667,-2 2,-2 m 20.000001,0 c 1.33333,0 2,0.66667 2,2 v 20 c 0,1.33333 -0.66667,2 -2,2 h -6 c -1.33333,0 -2.000001,-0.66667 -2.000001,-2 v -20 c 0,-1.33333 0.666671,-2 2.000001,-2 h 6"
+       id="path4660"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;stroke:none"
+       sodipodi:nodetypes="csssssssccsssssssc"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\pause.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128" />
+    <g
+       id="g4668"
+       transform="translate(-5.5900277,-330.273)"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\step.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128">
+      <g
+         inkscape:export-ydpi="96"
+         inkscape:export-xdpi="96"
+         inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\pause.png"
+         transform="matrix(0.31969757,0,0,0.96012083,20.758318,13.24733)"
+         id="g4658">
+        <path
+           inkscape:export-ydpi="96"
+           inkscape:export-xdpi="96"
+           inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\stop.png"
+           inkscape:connector-curvature="0"
+           style="fill:#ffffff;stroke:none;stroke-width:1.67742324"
+           id="path4637-6"
+           d="m 34.610418,352.79978 h 16.882493 c 3.751656,0 5.627498,0.66667 5.627498,2 v 20 c 0,1.33333 -1.875842,2 -5.627498,2 H 34.610418 c -3.751656,0 -5.627498,-0.66667 -5.627498,-2 v -20 c 0,-1.33333 1.875842,-2 5.627498,-2"
+           sodipodi:nodetypes="csssssssc" />
+        <path
+           inkscape:export-ydpi="96"
+           inkscape:export-xdpi="96"
+           inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\stop.png"
+           d="m 46.434746,353.85058 9.9,9.65 h 0.05 c 0.36667,0.4 0.55,0.83333 0.55,1.3 0,0.53333 -0.2,0.98333 -0.6,1.35 l -9.9,9.6 -0.05,0.05 c -0.4,0.36667 -0.83333,0.53333 -1.3,0.5 l -0.7,-0.15 c -0.83333,-0.3 -1.25,-0.86667 -1.25,-1.7 v -19.25 c 0,-0.83333 0.4,-1.41667 1.2,-1.75 h 0.05 c 0.76667,-0.3 1.45,-0.16667 2.05,0.4"
+           id="path4654"
+           inkscape:connector-curvature="0"
+           style="fill:#ffffff;stroke:none"
+           sodipodi:nodetypes="cccscccccssccc" />
+      </g>
+      <path
+         id="path4662"
+         d="m 46.405087,352.55 9.9,9.65 h 0.05 c 0.36667,0.4 0.55,0.83333 0.55,1.3 0,0.53333 -0.2,0.98333 -0.6,1.35 l -9.9,9.6 -0.05,0.05 c -0.4,0.36667 -0.83333,0.53333 -1.3,0.5 l -0.7,-0.15 c -0.83333,-0.3 -1.25,-0.86667 -1.25,-1.7 V 353.9 c 0,-0.83333 0.4,-1.41667 1.2,-1.75 h 0.05 c 0.76667,-0.3 1.45,-0.16667 2.05,0.4"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;stroke:none"
+         sodipodi:nodetypes="cccscccccssccc" />
+    </g>
+    <g
+       id="g4678"
+       transform="matrix(0.8,0,0,0.8,38.659224,-256.15583)"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\restart.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128">
+      <path
+         transform="matrix(-0.68004327,0.27531602,-0.27531602,-0.68004327,476.58024,549.98154)"
+         d="m 218.92395,377.29856 c -7.20465,-2.76509 -10.91506,-11.09743 -8.14997,-18.30207 2.76509,-7.20465 11.09743,-10.91506 18.30207,-8.14997 7.08467,2.71905 10.81652,10.83731 8.26739,17.98487"
+         sodipodi:t0="0.18000001"
+         sodipodi:argument="-17.941488"
+         sodipodi:radius="14.166649"
+         sodipodi:revolution="0.91000003"
+         sodipodi:expansion="0"
+         sodipodi:cy="364.07254"
+         sodipodi:cx="224"
+         id="path4672"
+         style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:7.61800003;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         sodipodi:type="spiral" />
+      <path
+         id="path4674"
+         d="m 224.33527,361.62156 -8.93353,-6.62773 h -0.0451 c -0.33087,-0.27472 -0.4963,-0.57234 -0.4963,-0.89284 0,-0.36631 0.18047,-0.67537 0.54142,-0.92721 l 8.93352,-6.59338 0.0451,-0.0343 c 0.36095,-0.25184 0.75198,-0.36629 1.17309,-0.3434 l 0.63166,0.10307 c 0.75199,0.20605 1.12798,0.59524 1.12798,1.16758 v 13.2211 c 0,0.57234 -0.36095,0.97298 -1.08286,1.20192 h -0.0451 c -0.69182,0.20604 -1.30845,0.11441 -1.84987,-0.27473"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;stroke:none;stroke-width:0.78724933"
+         sodipodi:nodetypes="cccscccccssccc" />
+    </g>
+    <path
+       id="path4680"
+       d="M 73.874559,104.2762 V 66.426202 q 0,-5.2 5.2,-5.2 h 37.650001 q 5.15,0 5.15,5.2 V 104.2762 q -0.1,4.95 -5.15,4.95 H 79.074559 q -5.1,0 -5.2,-4.95"
+       inkscape:connector-curvature="0"
+       style="fill:#383838;stroke:none"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\pause_hover.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128" />
+    <path
+       inkscape:export-ydpi="128"
+       inkscape:export-xdpi="128"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\step_hover.png"
+       id="path4682"
+       d="m 56.724559,61.226202 q 5.15,0 5.15,5.2 V 104.2762 q -0.1,4.95 -5.15,4.95 h -37.65 q -5.1,0 -5.2,-4.95 V 66.426202 q 0,-5.2 5.2,-5.2 h 37.65"
+       inkscape:connector-curvature="0"
+       style="fill:#383838;stroke:none" />
+    <path
+       inkscape:export-ydpi="128"
+       inkscape:export-xdpi="128"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\play_hover.png"
+       id="path4684"
+       d="m 133.87456,66.426202 q 0,-5.2 5.2,-5.2 h 37.65 q 5.15,0 5.15,5.2 V 104.2762 q -0.1,4.95 -5.15,4.95 h -37.65 q -5.1,0 -5.2,-4.95 V 66.426202"
+       inkscape:connector-curvature="0"
+       style="fill:#383838;stroke:none" />
+    <path
+       id="path4686"
+       d="m 199.07456,61.226202 h 37.65 q 5.15,0 5.15,5.2 V 104.2762 q -0.1,4.95 -5.15,4.95 h -37.65 q -5.1,0 -5.2,-4.95 V 66.426202 q 0,-5.2 5.2,-5.2"
+       inkscape:connector-curvature="0"
+       style="fill:#383838;stroke:none"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\restart_hover.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128" />
+    <path
+       inkscape:export-ydpi="128"
+       inkscape:export-xdpi="128"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\play_hover.png"
+       sodipodi:nodetypes="cccscccccssccc"
+       style="fill:#00ffea;fill-opacity:1;stroke:none;stroke-width:1.28109324"
+       inkscape:connector-curvature="0"
+       d="m 152.58819,72.988822 14.53755,10.78531 h 0.0734 c 0.53844,0.44706 0.80764,0.93137 0.80764,1.45294 0,0.59608 -0.29368,1.09902 -0.88106,1.50883 l -14.53755,10.72943 -0.0734,0.0559 c -0.58737,0.40981 -1.22369,0.59608 -1.90896,0.55882 l -1.02792,-0.16764 c -1.2237,-0.3353 -1.83555,-0.96864 -1.83555,-1.90001 v -21.51473 c 0,-0.93137 0.58738,-1.58334 1.76213,-1.95589 h 0.0734 c 1.12581,-0.33529 2.12925,-0.18628 3.01031,0.44706"
+       id="path4688" />
+    <path
+       sodipodi:nodetypes="csssssssccsssssssc"
+       style="fill:#00ffea;fill-opacity:1;stroke:none"
+       inkscape:connector-curvature="0"
+       id="path4690"
+       d="m 87.874559,73.226202 h 6 c 1.33333,0 2,0.66667 2,2 v 20 c 0,1.33333 -0.66667,2 -2,2 h -6 c -1.333333,0 -2,-0.66667 -2,-2 v -20 c 0,-1.33333 0.666667,-2 2,-2 m 20.000001,0 c 1.33333,0 2,0.66667 2,2 v 20 c 0,1.33333 -0.66667,2 -2,2 h -6 c -1.33333,0 -2.000001,-0.66667 -2.000001,-2 v -20 c 0,-1.33333 0.666671,-2 2.000001,-2 h 6"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\pause_hover.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128" />
+    <g
+       transform="translate(-5.5900277,-278.273)"
+       id="g4700"
+       style="fill:#00ffea;fill-opacity:1"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\step_hover.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128">
+      <g
+         id="g4696"
+         transform="matrix(0.31969757,0,0,0.96012083,20.758318,13.24733)"
+         inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\pause.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"
+         style="fill:#00ffea;fill-opacity:1">
+        <path
+           sodipodi:nodetypes="csssssssc"
+           d="m 34.610418,352.79978 h 16.882493 c 3.751656,0 5.627498,0.66667 5.627498,2 v 20 c 0,1.33333 -1.875842,2 -5.627498,2 H 34.610418 c -3.751656,0 -5.627498,-0.66667 -5.627498,-2 v -20 c 0,-1.33333 1.875842,-2 5.627498,-2"
+           id="path4692"
+           style="fill:#00ffea;fill-opacity:1;stroke:none;stroke-width:1.67742324"
+           inkscape:connector-curvature="0"
+           inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\stop.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96" />
+        <path
+           sodipodi:nodetypes="cccscccccssccc"
+           style="fill:#00ffea;fill-opacity:1;stroke:none"
+           inkscape:connector-curvature="0"
+           id="path4694"
+           d="m 46.434746,353.85058 9.9,9.65 h 0.05 c 0.36667,0.4 0.55,0.83333 0.55,1.3 0,0.53333 -0.2,0.98333 -0.6,1.35 l -9.9,9.6 -0.05,0.05 c -0.4,0.36667 -0.83333,0.53333 -1.3,0.5 l -0.7,-0.15 c -0.83333,-0.3 -1.25,-0.86667 -1.25,-1.7 v -19.25 c 0,-0.83333 0.4,-1.41667 1.2,-1.75 h 0.05 c 0.76667,-0.3 1.45,-0.16667 2.05,0.4"
+           inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\stop.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96" />
+      </g>
+      <path
+         sodipodi:nodetypes="cccscccccssccc"
+         style="fill:#00ffea;fill-opacity:1;stroke:none"
+         inkscape:connector-curvature="0"
+         d="m 46.405087,352.55 9.9,9.65 h 0.05 c 0.36667,0.4 0.55,0.83333 0.55,1.3 0,0.53333 -0.2,0.98333 -0.6,1.35 l -9.9,9.6 -0.05,0.05 c -0.4,0.36667 -0.83333,0.53333 -1.3,0.5 l -0.7,-0.15 c -0.83333,-0.3 -1.25,-0.86667 -1.25,-1.7 V 353.9 c 0,-0.83333 0.4,-1.41667 1.2,-1.75 h 0.05 c 0.76667,-0.3 1.45,-0.16667 2.05,0.4"
+         id="path4698" />
+    </g>
+    <g
+       transform="matrix(0.8,0,0,0.8,38.659223,-204.15584)"
+       id="g4706"
+       style="stroke:#ab6363;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\restart_hover.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128">
+      <path
+         transform="matrix(-0.68004327,0.27531602,-0.27531602,-0.68004327,476.58024,549.98154)"
+         style="fill:#000000;fill-opacity:0;fill-rule:evenodd;stroke:#00ffea;stroke-width:7.61800003;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 218.92395,377.29856 c -7.20465,-2.76509 -10.91506,-11.09743 -8.14997,-18.30207 2.76509,-7.20465 11.09743,-10.91506 18.30207,-8.14997 7.08467,2.71905 10.81652,10.83731 8.26739,17.98487"
+         id="path4702"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cccscccccssccc"
+         style="fill:#00ffea;fill-opacity:1;stroke:none;stroke-width:0.78724933;stroke-opacity:1"
+         inkscape:connector-curvature="0"
+         d="m 224.33527,361.62156 -8.93353,-6.62773 h -0.0451 c -0.33087,-0.27472 -0.4963,-0.57234 -0.4963,-0.89284 0,-0.36631 0.18047,-0.67537 0.54142,-0.92721 l 8.93352,-6.59338 0.0451,-0.0343 c 0.36095,-0.25184 0.75198,-0.36629 1.17309,-0.3434 l 0.63166,0.10307 c 0.75199,0.20605 1.12798,0.59524 1.12798,1.16758 v 13.2211 c 0,0.57234 -0.36095,0.97298 -1.08286,1.20192 h -0.0451 c -0.69182,0.20604 -1.30845,0.11441 -1.84987,-0.27473"
+         id="path4704" />
+    </g>
+    <path
+       style="fill:#3e3e3e;fill-opacity:1;stroke:none"
+       inkscape:connector-curvature="0"
+       d="m 73.874559,158.2762 v -37.85 q 0,-5.2 5.2,-5.2 h 37.650001 q 5.15,0 5.15,5.2 v 37.85 q -0.1,4.95 -5.15,4.95 H 79.074559 q -5.1,0 -5.2,-4.95"
+       id="path4708"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\pause_clicked.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128" />
+    <path
+       style="fill:#3e3e3e;fill-opacity:1;stroke:none"
+       inkscape:connector-curvature="0"
+       d="m 56.724559,115.2262 q 5.15,0 5.15,5.2 v 37.85 q -0.1,4.95 -5.15,4.95 h -37.65 q -5.1,0 -5.2,-4.95 v -37.85 q 0,-5.2 5.2,-5.2 h 37.65"
+       id="path4710"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\step_clicked.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128" />
+    <path
+       style="fill:#3e3e3e;fill-opacity:1;stroke:none"
+       inkscape:connector-curvature="0"
+       d="m 133.87456,120.4262 q 0,-5.2 5.2,-5.2 h 37.65 q 5.15,0 5.15,5.2 v 37.85 q -0.1,4.95 -5.15,4.95 h -37.65 q -5.1,0 -5.2,-4.95 v -37.85"
+       id="path4712"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\play_clicked.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128" />
+    <path
+       style="fill:#3e3e3e;fill-opacity:1;stroke:none"
+       inkscape:connector-curvature="0"
+       d="m 199.07456,115.2262 h 37.65 q 5.15,0 5.15,5.2 v 37.85 q -0.1,4.95 -5.15,4.95 h -37.65 q -5.1,0 -5.2,-4.95 v -37.85 q 0,-5.2 5.2,-5.2"
+       id="path4714"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\restart_clicked.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128" />
+    <path
+       id="path4716"
+       d="m 152.58819,126.98882 14.53755,10.78531 h 0.0734 c 0.53844,0.44706 0.80764,0.93137 0.80764,1.45294 0,0.59608 -0.29368,1.09902 -0.88106,1.50883 l -14.53755,10.72943 -0.0734,0.0559 c -0.58737,0.40981 -1.22369,0.59608 -1.90896,0.55882 l -1.02792,-0.16764 c -1.2237,-0.3353 -1.83555,-0.96864 -1.83555,-1.90001 v -21.51473 c 0,-0.93137 0.58738,-1.58334 1.76213,-1.95589 h 0.0734 c 1.12581,-0.33529 2.12925,-0.18628 3.01031,0.44706"
+       inkscape:connector-curvature="0"
+       style="fill:#cefff9;fill-opacity:1;stroke:none;stroke-width:1.28109324"
+       sodipodi:nodetypes="cccscccccssccc"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\play_clicked.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128" />
+    <path
+       d="m 87.874559,127.2262 h 6 c 1.33333,0 2,0.66667 2,2 v 20 c 0,1.33333 -0.66667,2 -2,2 h -6 c -1.333333,0 -2,-0.66667 -2,-2 v -20 c 0,-1.33333 0.666667,-2 2,-2 m 20.000001,0 c 1.33333,0 2,0.66667 2,2 v 20 c 0,1.33333 -0.66667,2 -2,2 h -6 c -1.33333,0 -2.000001,-0.66667 -2.000001,-2 v -20 c 0,-1.33333 0.666671,-2 2.000001,-2 h 6"
+       id="path4718"
+       inkscape:connector-curvature="0"
+       style="fill:#cefff9;fill-opacity:1;stroke:none"
+       sodipodi:nodetypes="csssssssccsssssssc"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\pause_clicked.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128" />
+    <g
+       id="g4728"
+       transform="translate(-5.5900277,-224.273)"
+       style="fill:#cefff9;fill-opacity:1"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\step_clicked.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128">
+      <g
+         inkscape:export-ydpi="96"
+         inkscape:export-xdpi="96"
+         inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\pause.png"
+         transform="matrix(0.31969757,0,0,0.96012083,20.758318,13.24733)"
+         id="g4724"
+         style="fill:#cefff9;fill-opacity:1">
+        <path
+           inkscape:export-ydpi="96"
+           inkscape:export-xdpi="96"
+           inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\stop.png"
+           inkscape:connector-curvature="0"
+           style="fill:#cefff9;fill-opacity:1;stroke:none;stroke-width:1.67742324"
+           id="path4720"
+           d="m 34.610418,352.79978 h 16.882493 c 3.751656,0 5.627498,0.66667 5.627498,2 v 20 c 0,1.33333 -1.875842,2 -5.627498,2 H 34.610418 c -3.751656,0 -5.627498,-0.66667 -5.627498,-2 v -20 c 0,-1.33333 1.875842,-2 5.627498,-2"
+           sodipodi:nodetypes="csssssssc" />
+        <path
+           inkscape:export-ydpi="96"
+           inkscape:export-xdpi="96"
+           inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\stop.png"
+           d="m 46.434746,353.85058 9.9,9.65 h 0.05 c 0.36667,0.4 0.55,0.83333 0.55,1.3 0,0.53333 -0.2,0.98333 -0.6,1.35 l -9.9,9.6 -0.05,0.05 c -0.4,0.36667 -0.83333,0.53333 -1.3,0.5 l -0.7,-0.15 c -0.83333,-0.3 -1.25,-0.86667 -1.25,-1.7 v -19.25 c 0,-0.83333 0.4,-1.41667 1.2,-1.75 h 0.05 c 0.76667,-0.3 1.45,-0.16667 2.05,0.4"
+           id="path4722"
+           inkscape:connector-curvature="0"
+           style="fill:#cefff9;fill-opacity:1;stroke:none"
+           sodipodi:nodetypes="cccscccccssccc" />
+      </g>
+      <path
+         id="path4726"
+         d="m 46.405087,352.55 9.9,9.65 h 0.05 c 0.36667,0.4 0.55,0.83333 0.55,1.3 0,0.53333 -0.2,0.98333 -0.6,1.35 l -9.9,9.6 -0.05,0.05 c -0.4,0.36667 -0.83333,0.53333 -1.3,0.5 l -0.7,-0.15 c -0.83333,-0.3 -1.25,-0.86667 -1.25,-1.7 V 353.9 c 0,-0.83333 0.4,-1.41667 1.2,-1.75 h 0.05 c 0.76667,-0.3 1.45,-0.16667 2.05,0.4"
+         inkscape:connector-curvature="0"
+         style="fill:#cefff9;fill-opacity:1;stroke:none"
+         sodipodi:nodetypes="cccscccccssccc" />
+    </g>
+    <g
+       id="g4734"
+       transform="matrix(0.8,0,0,0.8,38.659224,-150.15584)"
+       inkscape:export-filename="C:\Users\glaub\Downloads\onscreenControls\restart_clicked.png"
+       inkscape:export-xdpi="128"
+       inkscape:export-ydpi="128">
+      <path
+         transform="matrix(-0.68004327,0.27531602,-0.27531602,-0.68004327,476.58024,549.98154)"
+         d="m 218.92395,377.29856 c -7.20465,-2.76509 -10.91506,-11.09743 -8.14997,-18.30207 2.76509,-7.20465 11.09743,-10.91506 18.30207,-8.14997 7.08467,2.71905 10.81652,10.83731 8.26739,17.98487"
+         sodipodi:t0="0.18000001"
+         sodipodi:argument="-17.941488"
+         sodipodi:radius="14.166649"
+         sodipodi:revolution="0.91000003"
+         sodipodi:expansion="0"
+         sodipodi:cy="364.07254"
+         sodipodi:cx="224"
+         id="path4730"
+         style="fill:none;fill-rule:evenodd;stroke:#cefff9;stroke-width:7.61796474;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         sodipodi:type="spiral" />
+      <path
+         id="path4732"
+         d="m 224.33527,361.62156 -8.93353,-6.62773 h -0.0451 c -0.33087,-0.27472 -0.4963,-0.57234 -0.4963,-0.89284 0,-0.36631 0.18047,-0.67537 0.54142,-0.92721 l 8.93352,-6.59338 0.0451,-0.0343 c 0.36095,-0.25184 0.75198,-0.36629 1.17309,-0.3434 l 0.63166,0.10307 c 0.75199,0.20605 1.12798,0.59524 1.12798,1.16758 v 13.2211 c 0,0.57234 -0.36095,0.97298 -1.08286,1.20192 h -0.0451 c -0.69182,0.20604 -1.30845,0.11441 -1.84987,-0.27473"
+         inkscape:connector-curvature="0"
+         style="fill:#cefff9;fill-opacity:1;stroke:none;stroke-width:0.78724933"
+         sodipodi:nodetypes="cccscccccssccc" />
+    </g>
+  </g>
+</svg>

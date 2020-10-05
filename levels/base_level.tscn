@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://maps/tilesets/map_tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://objects/tilesets/object_tileset.tres" type="TileSet" id=2]
@@ -11,9 +11,20 @@
 [ext_resource path="res://objects/scenes/solid/solid.tscn" type="PackedScene" id=9]
 [ext_resource path="res://objects/scenes/movable/movable.tscn" type="PackedScene" id=10]
 [ext_resource path="res://ui/robot_code.tscn" type="PackedScene" id=11]
-[ext_resource path="res://ui/play_pause_button.gd" type="Script" id=12]
-
-
+[ext_resource path="res://ui/play_button.gd" type="Script" id=12]
+[ext_resource path="res://ui/sprites/step.png" type="Texture" id=13]
+[ext_resource path="res://ui/sprites/play.png" type="Texture" id=14]
+[ext_resource path="res://ui/sprites/play_clicked.png" type="Texture" id=15]
+[ext_resource path="res://ui/sprites/step_hover.png" type="Texture" id=16]
+[ext_resource path="res://ui/sprites/step_clicked.png" type="Texture" id=17]
+[ext_resource path="res://ui/sprites/play_hover.png" type="Texture" id=18]
+[ext_resource path="res://ui/sprites/restart.png" type="Texture" id=19]
+[ext_resource path="res://ui/sprites/restart_clicked.png" type="Texture" id=20]
+[ext_resource path="res://ui/sprites/restart_hover.png" type="Texture" id=21]
+[ext_resource path="res://ui/sprites/pause_hover.png" type="Texture" id=22]
+[ext_resource path="res://ui/sprites/pause.png" type="Texture" id=23]
+[ext_resource path="res://ui/sprites/pause_clicked.png" type="Texture" id=24]
+[ext_resource path="res://ui/pause_button.gd" type="Script" id=25]
 
 [sub_resource type="TileSet" id=1]
 0/name = "collision.png 0"
@@ -68,44 +79,67 @@ script = ExtResource( 8 )
 
 [node name="Code View" parent="." instance=ExtResource( 11 )]
 
-[node name="Control buttons" type="Control" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+[node name="Control buttons" type="HBoxContainer" parent="."]
+margin_left = 154.795
+margin_top = 521.019
+margin_right = 366.795
+margin_bottom = 585.019
+custom_constants/separation = 10
+alignment = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="PlayPause Button" type="Button" parent="Control buttons"]
-margin_left = 10.0794
-margin_top = 10.0794
-margin_right = 111.079
-margin_bottom = 43.0794
-text = "Toggle Pause"
+[node name="Play Button" type="TextureButton" parent="Control buttons"]
+margin_right = 64.0
+margin_bottom = 64.0
+texture_normal = ExtResource( 14 )
+texture_pressed = ExtResource( 15 )
+texture_hover = ExtResource( 18 )
+stretch_mode = 2
 script = ExtResource( 12 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Step Button" type="Button" parent="Control buttons"]
-margin_left = 123.472
-margin_top = 10.0794
-margin_right = 224.472
-margin_bottom = 43.0794
-text = "Step"
+[node name="Pause Button" type="TextureButton" parent="Control buttons"]
+visible = false
+margin_left = 68.0
+margin_right = 132.0
+margin_bottom = 64.0
+texture_normal = ExtResource( 23 )
+texture_pressed = ExtResource( 24 )
+texture_hover = ExtResource( 22 )
+stretch_mode = 2
+script = ExtResource( 25 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Restart Button" type="Button" parent="Control buttons"]
-margin_left = 239.385
-margin_top = 10.0794
-margin_right = 341.0
-margin_bottom = 43.0794
-text = "Ctrl alt del"
+[node name="Step Button" type="TextureButton" parent="Control buttons"]
+margin_left = 74.0
+margin_right = 138.0
+margin_bottom = 64.0
+texture_normal = ExtResource( 13 )
+texture_pressed = ExtResource( 17 )
+texture_hover = ExtResource( 16 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pause_state" from="Code runner" to="Control buttons/PlayPause Button" method="_on_pause_state"]
-[connection signal="pressed" from="Control buttons/PlayPause Button" to="Code runner" method="toggle_pause"]
+
+[node name="Restart Button" type="TextureButton" parent="Control buttons"]
+margin_left = 148.0
+margin_right = 212.0
+margin_bottom = 64.0
+texture_normal = ExtResource( 19 )
+texture_pressed = ExtResource( 20 )
+texture_hover = ExtResource( 21 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pause_state" from="Code runner" to="Control buttons/Pause Button" method="_on_pause_state"]
+[connection signal="pause_state" from="Code runner" to="Control buttons/Play Button" method="_on_pause_state"]
+[connection signal="pressed" from="Control buttons/Play Button" to="Code runner" method="toggle_pause"]
+[connection signal="pressed" from="Control buttons/Pause Button" to="Code runner" method="toggle_pause"]
 [connection signal="pressed" from="Control buttons/Step Button" to="Code runner" method="step"]
 [connection signal="pressed" from="Control buttons/Restart Button" to="." method="restart"]
