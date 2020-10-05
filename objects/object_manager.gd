@@ -1,10 +1,11 @@
 class_name ObjectManager
 extends Node2D
 
-enum ObjectType {Empty = -1, Robot, Solid, Movable, Goal}
+enum ObjectType {Empty = -1, Robot, Solid, Movable, Goal, Placeable}
 
 var robot: Robot = null
 var _objects = []
+var placeable_cells = []
 
 
 # Called when the node enters the scene tree for the first time.
@@ -33,6 +34,25 @@ func interact(world_position: Vector2, click_type: int):
 
 	if cell_type == ObjectType.Robot:
 		robot.turn(-1 if click_type == BUTTON_LEFT else 1)
+		return
+
+	if cell_type == ObjectType.Placeable && click_type == BUTTON_LEFT:
+		$Map.set_cellv(grid_pos, ObjectType.Solid)
+		var obj = $Scenes.solid_object_scene.instance()
+		obj.position = $Map.map_to_world(grid_pos) + $Map.cell_size / 2
+		_objects.push_back(obj)
+		add_child(obj)
+		return
+
+	if cell_type == ObjectType.Solid && click_type == BUTTON_RIGHT:
+		if grid_pos in placeable_cells:
+			$Map.set_cellv(grid_pos, ObjectType.Placeable)
+			for obj in _objects:
+				if $Map.world_to_map(obj.position) == grid_pos:
+					obj.queue_free()
+					_objects.erase(obj)
+					break
+			return
 
 
 func instance_objects(map: TileMap, scenes: ObjectScenes):
@@ -49,6 +69,8 @@ func instance_objects(map: TileMap, scenes: ObjectScenes):
 				scene_to_instance = scenes.solid_object_scene
 			ObjectType.Movable:
 				scene_to_instance = scenes.movable_object_scene
+			ObjectType.Placeable:
+				placeable_cells.push_back(cell)
 			_:
 				print("Panic: Invalid object at position %s, id %s" %
 					[cell, cell_id])

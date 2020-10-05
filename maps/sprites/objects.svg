@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="256"
+   width="320"
    height="64"
-   viewBox="0 0 67.733332 16.933334"
+   viewBox="0 0 84.666665 16.933334"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
@@ -24,16 +24,17 @@
     <marker
        inkscape:stockid="DotL"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="DotL"
        style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path884"
-         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
-         transform="scale(0.8) translate(7.4, 1)" />
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt"
+         transform="matrix(0.8,0,0,0.8,5.92,0.8)"
+         inkscape:connector-curvature="0" />
     </marker>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -68,8 +69,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="105.97838"
-     inkscape:cy="84.922837"
+     inkscape:cx="197.86163"
+     inkscape:cy="89.372847"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -92,21 +93,28 @@
        position="16.933333,0"
        orientation="1,0"
        id="guide815"
-       inkscape:locked="true"
+       inkscape:locked="false"
        inkscape:label=""
        inkscape:color="rgb(0,0,255)" />
     <sodipodi:guide
        position="33.866667,0"
        orientation="1,0"
        id="guide817"
-       inkscape:locked="true"
+       inkscape:locked="false"
        inkscape:label=""
        inkscape:color="rgb(0,0,255)" />
     <sodipodi:guide
        position="50.8,0"
        orientation="1,0"
        id="guide819"
-       inkscape:locked="true"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="67.733334,0"
+       orientation="1,0"
+       id="guide850"
+       inkscape:locked="false"
        inkscape:label=""
        inkscape:color="rgb(0,0,255)" />
   </sodipodi:namedview>
@@ -134,18 +142,18 @@
        height="16.933334"
        width="16.933334"
        id="rect1093"
-       style="opacity:1;fill:#00aaff;fill-opacity:1;stroke:#004a67;stroke-width:1.05833334;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       style="opacity:1;fill:#00aaff;fill-opacity:1;stroke:#004a67;stroke-width:1.0583334;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
        clip-path="url(#clipPath1095)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.93888903px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#002f4a;fill-opacity:1;stroke:none;stroke-width:0.26458335;"
+       style="font-style:normal;font-weight:normal;font-size:4.93888903px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#002f4a;fill-opacity:1;stroke:none;stroke-width:0.26458335"
        x="0.5386411"
        y="289.89584"
        id="text1101"><tspan
          sodipodi:role="line"
          x="0.5386411"
          y="289.89584"
-         style="font-size:4.93888903px;line-height:0px;fill:#002f4a;fill-opacity:1;stroke-width:0.26458335;"
+         style="font-size:4.93888903px;line-height:0px;fill:#002f4a;fill-opacity:1;stroke-width:0.26458335"
          id="tspan1111">Player</tspan></text>
     <rect
        transform="translate(16.933333,8.758789e-6)"
@@ -159,14 +167,14 @@
        clip-path="url(#clipPath1095-4)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#4a2900;fill-opacity:1;stroke:none;stroke-width:0.26458335;"
+       style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#4a2900;fill-opacity:1;stroke:none;stroke-width:0.26458335"
        x="17.746204"
        y="290.90063"
        id="text1101-1"><tspan
          sodipodi:role="line"
          x="17.746204"
          y="290.90063"
-         style="font-size:6.3499999px;line-height:0px;fill:#4a2900;fill-opacity:1;stroke-width:0.26458335;"
+         style="font-size:6.3499999px;line-height:0px;fill:#4a2900;fill-opacity:1;stroke-width:0.26458335"
          id="tspan1111-6">Solid</tspan></text>
     <rect
        clip-path="url(#clipPath1095-4)"
@@ -210,13 +218,20 @@
          id="text1152"
          y="290.90063"
          x="52.153923"
-         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#4e4e00;fill-opacity:1;stroke:none;stroke-width:0.26458335;"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#4e4e00;fill-opacity:1;stroke:none;stroke-width:0.26458335"
          xml:space="preserve"><tspan
            id="tspan1150"
-           style="font-size:6.3499999px;line-height:0px;fill:#4e4e00;fill-opacity:1;stroke-width:0.26458335;"
+           style="font-size:6.3499999px;line-height:0px;fill:#4e4e00;fill-opacity:1;stroke-width:0.26458335"
            y="290.90063"
            x="52.153923"
            sodipodi:role="line">Goal</tspan></text>
     </g>
+    <rect
+       style="opacity:0.36100003;fill:#bababa;fill-opacity:0.46046513;stroke:#656565;stroke-width:0.42590347;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect852"
+       width="13.628911"
+       height="13.628911"
+       x="69.385551"
+       y="281.71887" />
   </g>
 </svg>
