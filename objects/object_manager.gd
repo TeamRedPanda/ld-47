@@ -27,6 +27,14 @@ func move_obj(from: Vector2, to: Vector2):
 			$Map.set_cellv(to, ObjectType.Movable)
 
 
+func interact(world_position: Vector2, click_type: int):
+	var grid_pos = $Map.world_to_map(world_position)
+	var cell_type = $Map.get_cellv(grid_pos)
+
+	if cell_type == ObjectType.Robot:
+		robot.turn(-1 if click_type == BUTTON_LEFT else 1)
+
+
 func instance_objects(map: TileMap, scenes: ObjectScenes):
 	var cells = map.get_used_cells()
 	for cell in cells:

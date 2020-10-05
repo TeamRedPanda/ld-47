@@ -30,6 +30,17 @@ func get_goals(map: TileMap):
 	_goals = map.get_used_cells()
 
 
+func _input(event: InputEvent) -> void:
+	var mouseClick = event as InputEventMouseButton
+	if not mouseClick:
+		return
+
+	if not mouseClick.pressed:
+		return
+
+	$Objects.interact(mouseClick.position, mouseClick.button_index)
+
+
 func move(from:Vector2, direction: Vector2) -> bool:
 	var object_map := get_node("Objects/Map") as TileMap
 

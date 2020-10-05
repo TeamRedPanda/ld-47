@@ -41,9 +41,9 @@ __meta__ = {
 }
 
 [node name="Button4" type="Button" parent="." index="7"]
-margin_left = 239.385
+margin_left = 240.0
 margin_top = 10.0794
-margin_right = 340.385
+margin_right = 341.0
 margin_bottom = 43.0794
 text = "Ctrl alt del"
 __meta__ = {
