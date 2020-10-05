@@ -8,6 +8,7 @@ signal cleared
 var _goals = []
 
 onready var _code_runner: CodeRunner = $"Code runner"
+onready var _instruction_list: VBoxContainer = $"Panel/Instruction list"
 
 
 func _ready() -> void:
@@ -18,6 +19,7 @@ func register_code(code: Code):
 	code.actor = $Objects.robot
 	_code_runner.code = code
 	_code_runner.connect("step_finished", self, "check_win")
+	_instruction_list.set_code(code)
 
 
 func check_win():

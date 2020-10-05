@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://maps/tilesets/map_tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://maps/tilesets/object_tileset.tres" type="TileSet" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://levels/code_runner.gd" type="Script" id=8]
 [ext_resource path="res://objects/solid/solid.tscn" type="PackedScene" id=9]
 [ext_resource path="res://objects/movable/movable.tscn" type="PackedScene" id=10]
+[ext_resource path="res://ui/robot_code.tscn" type="PackedScene" id=11]
 
 [sub_resource type="TileSet" id=1]
 0/name = "collision.png 0"
@@ -61,3 +62,5 @@ movable_object_scene = ExtResource( 10 )
 
 [node name="Code runner" type="Node" parent="."]
 script = ExtResource( 8 )
+
+[node name="Panel" parent="." instance=ExtResource( 11 )]
