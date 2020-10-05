@@ -32,7 +32,7 @@ _global_script_classes=[ {
 "base": "Node2D",
 "class": "Movable",
 "language": "GDScript",
-"path": "res://objects/movable/movable.gd"
+"path": "res://objects/scenes/movable/movable.gd"
 }, {
 "base": "Statement",
 "class": "MoveStatement",

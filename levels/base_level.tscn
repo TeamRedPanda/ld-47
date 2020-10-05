@@ -1,17 +1,19 @@
 [gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://maps/tilesets/map_tileset.tres" type="TileSet" id=1]
-[ext_resource path="res://maps/tilesets/object_tileset.tres" type="TileSet" id=2]
+[ext_resource path="res://objects/tilesets/object_tileset.tres" type="TileSet" id=2]
 [ext_resource path="res://levels/object_scenes.gd" type="Script" id=3]
 [ext_resource path="res://robot/robot.tscn" type="PackedScene" id=4]
 [ext_resource path="res://collision.png" type="Texture" id=5]
 [ext_resource path="res://objects/object_manager.gd" type="Script" id=6]
 [ext_resource path="res://levels/base_level.gd" type="Script" id=7]
 [ext_resource path="res://levels/code_runner.gd" type="Script" id=8]
-[ext_resource path="res://objects/solid/solid.tscn" type="PackedScene" id=9]
-[ext_resource path="res://objects/movable/movable.tscn" type="PackedScene" id=10]
+[ext_resource path="res://objects/scenes/solid/solid.tscn" type="PackedScene" id=9]
+[ext_resource path="res://objects/scenes/movable/movable.tscn" type="PackedScene" id=10]
 [ext_resource path="res://ui/robot_code.tscn" type="PackedScene" id=11]
 [ext_resource path="res://ui/play_pause_button.gd" type="Script" id=12]
+
+
 
 [sub_resource type="TileSet" id=1]
 0/name = "collision.png 0"

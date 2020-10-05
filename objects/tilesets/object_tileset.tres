@@ -1,6 +1,6 @@
 [gd_resource type="TileSet" load_steps=2 format=2]
 
-[ext_resource path="res://maps/sprites/objects.png" type="Texture" id=1]
+[ext_resource path="res://objects/sprites/objects.png" type="Texture" id=1]
 
 [resource]
 0/name = "objects.png 0"

@@ -6,8 +6,8 @@ func _ready() -> void:
 	._ready()
 
 	var code := Code.new()
-	code.add(TurnStatement.new(-1))
-	code.add(MoveStatement.new(3))
+	code.add(TurnStatement.new(1))
+	code.add(MoveStatement.new(4))
 	register_code(code)
 
 	get_goals($Goals)
