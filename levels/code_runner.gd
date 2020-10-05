@@ -2,28 +2,32 @@ class_name CodeRunner
 extends Node
 
 signal step_finished
+signal pause_state(state)
 
 var code: Code = null
-var _paused: bool = false
+var _paused: bool = true
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	emit_signal("pause_state", _paused)
 
 
-func execute_code():
+func _process(_delta: float) -> void:
 	if not code:
-		print("Panic: Trying to call execute_call without a code object.")
+		return
 
-	_paused = false
+	if _paused:
+		return
 
-	while not _paused:
-		yield(step(), "completed")
+	set_process(false)
+	yield(step(), "completed")
+	set_process(true)
 
 
 func toggle_pause():
 	_paused = not _paused
+	emit_signal("pause_state", _paused)
 
 
 func step():
