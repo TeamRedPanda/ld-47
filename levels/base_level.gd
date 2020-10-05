@@ -62,7 +62,9 @@ func move(from:Vector2, direction: Vector2) -> bool:
 		return false
 
 	if is_movable(to):
-		try_push_movable(to, direction)
+		var pushed = try_push_movable(to, direction)
+		if not pushed:
+			return false
 
 	object_map.set_cellv(from, ObjectType.Empty)
 	object_map.set_cellv(to, ObjectType.Robot)
@@ -76,7 +78,7 @@ func try_push_movable(from, towards):
 		return false
 
 	$Objects.move_obj(from, behind_pos)
-
+	return true
 
 func is_wall(position: Vector2) -> bool:
 	var wall_map := get_node("Collision") as TileMap
