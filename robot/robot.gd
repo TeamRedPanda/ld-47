@@ -18,6 +18,7 @@ func move(steps: int):
 		if not level.move(position, _look_direction):
 			var initial_pos := position
 
+			SoundController.play_sound("Shake Sound")
 			var shake_direction := Vector2(_look_direction.y, _look_direction.x)
 			var shake_pos1 := position + shake_direction * 10
 			var shake_pos2 := position - shake_direction * 5
@@ -25,16 +26,15 @@ func move(steps: int):
 			yield(shake(initial_pos, shake_pos1, 0.1), "completed")
 			yield(shake(initial_pos, shake_pos2, 0.1), "completed")
 			
-			#SoundController.play_sound("Shake Sound")
 			continue
 
+		SoundController.play_sound("Move Sound")
 		#warning-ignore:RETURN_VALUE_DISCARDED
 		_tween.interpolate_property(self, "position", position, final_pos, 0.6, Tween.TRANS_CUBIC, Tween.EASE_IN_OUT)
 		#warning-ignore:RETURN_VALUE_DISCARDED
 		_tween.start()
 
 		yield(_tween, "tween_completed")
-		SoundController.play_sound("Move Sound")
 
 	yield(get_tree(), "idle_frame")
 	emit_signal("command_executed")
@@ -42,6 +42,7 @@ func move(steps: int):
 
 func turn(steps: int):
 	_look_direction = _look_direction.rotated(PI / 2 * steps)
+	SoundController.play_sound("Turn Sound")
 	#warning-ignore:RETURN_VALUE_DISCARDED
 	_tween.interpolate_property(self, "rotation", null, rotation + PI / 2 * steps, 0.5, Tween.TRANS_CUBIC, Tween.EASE_IN_OUT)
 	#warning-ignore:RETURN_VALUE_DISCARDED
@@ -49,7 +50,6 @@ func turn(steps: int):
 
 	yield(_tween, "tween_completed")
 
-	#SoundController.play_sound("Turn Sound")
 	emit_signal("command_executed")
 
 func shake(initial_pos, shake_pos, duration):
