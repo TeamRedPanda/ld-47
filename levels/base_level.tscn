@@ -137,8 +137,8 @@ texture_hover = ExtResource( 21 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pause_state" from="Code runner" to="Control buttons/Pause Button" method="_on_pause_state"]
 [connection signal="pause_state" from="Code runner" to="Control buttons/Play Button" method="_on_pause_state"]
+[connection signal="pause_state" from="Code runner" to="Control buttons/Pause Button" method="_on_pause_state"]
 [connection signal="pressed" from="Control buttons/Play Button" to="Code runner" method="toggle_pause"]
 [connection signal="pressed" from="Control buttons/Pause Button" to="Code runner" method="toggle_pause"]
 [connection signal="pressed" from="Control buttons/Step Button" to="Code runner" method="step"]
