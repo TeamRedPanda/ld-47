@@ -13,8 +13,6 @@
 [ext_resource path="res://ui/robot_code.tscn" type="PackedScene" id=11]
 [ext_resource path="res://ui/play_pause_button.gd" type="Script" id=12]
 
-
-
 [sub_resource type="TileSet" id=1]
 0/name = "collision.png 0"
 0/texture = ExtResource( 5 )
