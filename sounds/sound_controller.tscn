@@ -1,23 +1,26 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
+[ext_resource path="res://sounds/FX/shake_sound.ogg" type="AudioStream" id=1]
 [ext_resource path="res://sounds/sound_controller.gd" type="Script" id=2]
-[ext_resource path="res://sounds/Audio/move_sound.ogg" type="AudioStream" id=3]
+[ext_resource path="res://sounds/FX/move_sound.ogg" type="AudioStream" id=3]
+[ext_resource path="res://sounds/FX/level_clear_sound.ogg" type="AudioStream" id=4]
+[ext_resource path="res://sounds/FX/turn_sound.ogg" type="AudioStream" id=5]
 
 [node name="Sound Controller" type="Node"]
 script = ExtResource( 2 )
 
-[node name="Move Sound" type="AudioStreamPlayer2D" parent="."]
+[node name="Move Sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 volume_db = -20.0
 
-[node name="Shake Sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 3 )
+[node name="Shake Sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
 volume_db = -20.0
 
-[node name="Turn Sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 3 )
-volume_db = -20.0
+[node name="Turn Sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -10.0
 
-[node name="Clear Level Sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 3 )
+[node name="Clear Level Sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
 volume_db = -20.0

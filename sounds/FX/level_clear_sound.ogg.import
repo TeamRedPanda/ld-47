@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/level_clear_sound.ogg-cfc7f3f241083c18c3d36f9f37fa6025.oggstr"
+
+[deps]
+
+source_file="res://sounds/FX/level_clear_sound.ogg"
+dest_files=[ "res://.import/level_clear_sound.ogg-cfc7f3f241083c18c3d36f9f37fa6025.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
