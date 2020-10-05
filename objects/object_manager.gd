@@ -12,14 +12,13 @@ func _ready() -> void:
 	instance_objects($Map, $Scenes)
 
 
-func move_obj(to: Vector2, direction: Vector2):
-	var behind_pos = to + direction
+func move_obj(from: Vector2, to: Vector2):
 	for obj in _objects:
-		if $Map.world_to_map(obj.position) == to:
-			obj.move(direction)
+		if $Map.world_to_map(obj.position) == from:
+			obj.move(to - from)
 
-			$Map.set_cellv(to, ObjectType.Empty)
-			$Map.set_cellv(behind_pos, ObjectType.Movable)
+			$Map.set_cellv(from, ObjectType.Empty)
+			$Map.set_cellv(to, ObjectType.Movable)
 
 
 func instance_objects(map: TileMap, scenes: ObjectScenes):
@@ -29,7 +28,6 @@ func instance_objects(map: TileMap, scenes: ObjectScenes):
 		var cell_position := map.map_to_world(cell) + map.cell_size / 2
 
 		var scene_to_instance = null
-		print(cell_id)
 		match cell_id:
 			ObjectType.Robot:
 				scene_to_instance = scenes.robot_scene

@@ -35,17 +35,20 @@ func move(from:Vector2, direction: Vector2) -> bool:
 		return false
 
 	if is_movable(to):
-		var behind_pos = to + direction
-		if is_wall(behind_pos) or is_solid(behind_pos) or is_movable(behind_pos):
-			return false
-
-		$Objects.move_obj(to, direction)
-
+		try_push_movable(to, direction)
 
 	object_map.set_cellv(from, ObjectType.Empty)
 	object_map.set_cellv(to, ObjectType.Robot)
 
 	return true
+
+
+func try_push_movable(from, towards):
+	var behind_pos = from + towards
+	if is_wall(behind_pos) or is_solid(behind_pos) or is_movable(behind_pos):
+		return false
+
+	$Objects.move_obj(from, behind_pos)
 
 
 func is_wall(position: Vector2) -> bool:
