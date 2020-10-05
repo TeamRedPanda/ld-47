@@ -34,7 +34,8 @@ func step():
 
 
 func reset():
-	get_tree().reload_current_scene()
+	if get_tree().reload_current_scene() != OK:
+		print("Panic: Somehow the current scene cannot be reloaded.")
 
 
 func instance_objects(map: TileMap, scenes: ObjectScenes):
@@ -94,7 +95,6 @@ func move(from:Vector2, direction: Vector2) -> bool:
 		if is_wall(behind_pos) or is_solid(behind_pos) or is_movable(behind_pos):
 			return false
 
-		var world_pos := object_map.map_to_world(to) + object_map.cell_size / 2
 		for obj in _objects:
 			if object_map.world_to_map(obj.position) == to:
 				obj.move(direction)
