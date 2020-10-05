@@ -19,7 +19,7 @@ tile_data = PoolIntArray( 65537, 0, 0, 65538, 0, 0, 65539, 0, 1, 65540, 0, 1, 65
 [node name="Map" parent="Objects" index="0"]
 tile_data = PoolIntArray( 262148, 2, 0, 393219, 1, 0, 393220, 0, 0, 393222, 1, 0 )
 
-[node name="Button2" type="Button" parent="." index="5"]
+[node name="PlayPause Button" type="Button" parent="." index="5"]
 margin_left = 10.0794
 margin_top = 10.0794
 margin_right = 111.079
@@ -30,7 +30,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button3" type="Button" parent="." index="6"]
+[node name="Step Button" type="Button" parent="." index="6"]
 margin_left = 123.472
 margin_top = 10.0794
 margin_right = 224.472
@@ -40,8 +40,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button4" type="Button" parent="." index="7"]
-margin_left = 240.0
+[node name="Stop Button" type="Button" parent="." index="7"]
+margin_left = 239.385
 margin_top = 10.0794
 margin_right = 341.0
 margin_bottom = 43.0794
@@ -49,7 +49,7 @@ text = "Ctrl alt del"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pause_state" from="Code runner" to="Button2" method="_on_pause_state"]
-[connection signal="pressed" from="Button2" to="Code runner" method="toggle_pause"]
-[connection signal="pressed" from="Button3" to="Code runner" method="step"]
-[connection signal="pressed" from="Button4" to="Code runner" method="reset"]
+[connection signal="pause_state" from="Code runner" to="PlayPause Button" method="_on_pause_state"]
+[connection signal="pressed" from="PlayPause Button" to="Code runner" method="toggle_pause"]
+[connection signal="pressed" from="Step Button" to="Code runner" method="step"]
+[connection signal="pressed" from="Stop Button" to="Code runner" method="reset"]
