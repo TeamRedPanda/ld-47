@@ -1,5 +1,5 @@
 class_name ObjectManager
-extends Node
+extends Node2D
 
 enum ObjectType {Empty = -1, Robot, Solid, Movable, Goal}
 

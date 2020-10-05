@@ -45,7 +45,7 @@ tile_set = SubResource( 1 )
 cell_tile_origin = 1
 format = 1
 
-[node name="Objects" type="Node" parent="."]
+[node name="Objects" type="Node2D" parent="."]
 script = ExtResource( 6 )
 
 [node name="Map" type="TileMap" parent="Objects"]

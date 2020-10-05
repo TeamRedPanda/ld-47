@@ -3,6 +3,8 @@ extends Node
 
 enum ObjectType {Empty = -1, Robot, Solid, Movable, Goal}
 
+signal cleared
+
 var _goals = []
 
 onready var _code_runner: CodeRunner = $"Code runner"
@@ -24,6 +26,7 @@ func check_win():
 			return
 
 	_code_runner._paused = true
+	emit_signal("cleared")
 
 
 func get_goals(map: TileMap):
