@@ -25,7 +25,7 @@ func register_code(code: Code):
 
 func check_win():
 	for goal in _goals:
-		if $Objects.is_empty(goal):
+		if not is_movable(goal):
 			return
 
 	_code_runner._paused = true
