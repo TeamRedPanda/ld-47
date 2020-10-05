@@ -2,7 +2,7 @@ extends Node2D
 
 export(Array, PackedScene) var levels
 
-var current_level: BaseLevel = null
+var current_level: Node = null
 var current_index: int = 0
 
 # Called when the node enters the scene tree for the first time.
@@ -33,10 +33,9 @@ func load_level(index: int):
 
 
 func on_level_cleared():
-	current_index += 1
+	current_index = (current_index + 1) % len(levels)
 
-	if current_index < len(levels):
-		load_level(current_index)
+	load_level(current_index)
 
 
 func on_level_restart():
