@@ -1,11 +1,13 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://levels/1/instruction_list.gd" type="Script" id=1]
 [ext_resource path="res://ui/move_statement_view.tscn" type="PackedScene" id=2]
 [ext_resource path="res://ui/turn_statement_view.tscn" type="PackedScene" id=3]
+[ext_resource path="res://fonts/title.tres" type="DynamicFont" id=4]
 
 [node name="Panel" type="Panel"]
 margin_left = 520.0
+margin_top = 25.0
 margin_right = 784.0
 margin_bottom = 512.0
 __meta__ = {
@@ -15,6 +17,7 @@ __meta__ = {
 [node name="Label" type="Label" parent="."]
 margin_right = 264.0
 margin_bottom = 45.0
+custom_fonts/font = ExtResource( 4 )
 text = "Robot Code"
 align = 1
 valign = 1
@@ -23,9 +26,10 @@ __meta__ = {
 }
 
 [node name="Instruction list" type="VBoxContainer" parent="."]
-margin_top = 43.0794
-margin_right = 264.0
-margin_bottom = 512.079
+margin_left = 10.0
+margin_top = 51.0
+margin_right = 254.0
+margin_bottom = 502.0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false

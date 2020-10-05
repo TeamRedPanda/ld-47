@@ -1,10 +1,13 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://ui/move_statement_view.gd" type="Script" id=1]
+[ext_resource path="res://fonts/text.tres" type="DynamicFont" id=2]
 
 [node name="Move Statement" type="Label"]
 margin_right = 47.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.792157, 0.792157, 0.792157, 1 )
 text = "Move foward 0 times"
 script = ExtResource( 1 )
 __meta__ = {
