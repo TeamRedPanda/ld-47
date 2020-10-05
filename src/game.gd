@@ -20,6 +20,7 @@ func load_level(index: int):
 
 	current_level = levels[index].instance()
 	current_level.connect("cleared", self, "on_level_cleared")
+	current_level.connect("restart", self, "on_level_restart")
 	add_child(current_level)
 
 	current_level.position = Vector2(get_viewport().size.x, 0)
@@ -37,3 +38,11 @@ func on_level_cleared():
 	if current_index < len(levels):
 		load_level(current_index)
 
+
+func on_level_restart():
+	current_level.queue_free()
+
+	current_level = levels[current_index].instance()
+	current_level.connect("cleared", self, "on_level_cleared")
+	current_level.connect("restart", self, "on_level_restart")
+	add_child(current_level)

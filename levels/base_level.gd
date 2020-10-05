@@ -4,11 +4,12 @@ extends Node
 enum ObjectType {Empty = -1, Robot, Solid, Movable, Goal}
 
 signal cleared
+signal restart
 
 var _goals = []
 
 onready var _code_runner: CodeRunner = $"Code runner"
-onready var _instruction_list: VBoxContainer = $"Panel/Instruction list"
+onready var _instruction_list: VBoxContainer = $"Code View/Instruction list"
 
 
 func _ready() -> void:
@@ -98,3 +99,7 @@ func is_movable(position: Vector2) -> bool:
 	var cell_type := object_map.get_cellv(position)
 
 	return cell_type == ObjectType.Movable
+
+
+func restart() -> void:
+	emit_signal("restart")
