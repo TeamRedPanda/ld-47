@@ -1,4 +1,7 @@
 extends Label
 
 func show_statement(stmt: TurnStatement):
-	text = "Turn %s times" %stmt._amount
+	if stmt._amount < 0:
+		text = "Turn counterclock %s times" %stmt._amount
+	else:
+		text = "Turn clockwise %s times" %stmt._amount		
