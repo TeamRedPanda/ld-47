@@ -1,8 +1,8 @@
-extends Button
+extends TextureButton
 
 
 func _on_pause_state(paused: bool) -> void:
 	if paused:
-		self.text = "Play"
+		hide()
 	else:
-		self.text = "Pause"
+		show()
