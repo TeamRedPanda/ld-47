@@ -4,7 +4,7 @@
 [ext_resource path="res://levels/1/level.tscn" type="PackedScene" id=2]
 [ext_resource path="res://levels/2/level.tscn" type="PackedScene" id=3]
 [ext_resource path="res://levels/end_game/end_game.tscn" type="PackedScene" id=4]
-[ext_resource path="res://levels/3/level.tscn" type="PackedScene" id=5]
+[ext_resource path="res://levels/4/level.tscn" type="PackedScene" id=5]
 [ext_resource path="res://levels/tutorial/level.tscn" type="PackedScene" id=6]
 
 [node name="Game" type="Node2D"]
