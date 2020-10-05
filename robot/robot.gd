@@ -18,7 +18,9 @@ func move(steps: int):
 		if not level.move(position, _look_direction):
 			continue
 
+		#warning-ignore:RETURN_VALUE_DISCARDED
 		_tween.interpolate_property(self, "position", position, final_pos, 0.6, Tween.TRANS_CUBIC, Tween.EASE_IN_OUT)
+		#warning-ignore:RETURN_VALUE_DISCARDED
 		_tween.start()
 
 		yield(_tween, "tween_completed")
@@ -29,7 +31,9 @@ func move(steps: int):
 
 func turn(steps: int):
 	_look_direction = _look_direction.rotated(PI / 2 * steps)
+	#warning-ignore:RETURN_VALUE_DISCARDED
 	_tween.interpolate_property(self, "rotation", null, rotation + PI / 2 * steps, 0.5, Tween.TRANS_CUBIC, Tween.EASE_IN_OUT)
+	#warning-ignore:RETURN_VALUE_DISCARDED
 	_tween.start()
 
 	yield(_tween, "tween_completed")
