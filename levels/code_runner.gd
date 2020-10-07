@@ -11,6 +11,8 @@ var _is_executing: bool = false
 var action_queue = []
 const ACTION_TOLERANCE: int = 300
 
+var started: bool = false
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -55,6 +57,8 @@ func toggle_pause():
 
 
 func step():
+	started = true
+
 	_is_executing = true
 	set_process(false)
 

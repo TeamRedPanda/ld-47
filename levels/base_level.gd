@@ -45,7 +45,8 @@ func _input(event: InputEvent) -> void:
 	if not mouseClick.pressed:
 		return
 
-	$Objects.interact(mouseClick.position, mouseClick.button_index)
+	if not _code_runner.started:
+		$Objects.interact(mouseClick.position, mouseClick.button_index)
 
 
 func move(from:Vector2, direction: Vector2) -> bool:
