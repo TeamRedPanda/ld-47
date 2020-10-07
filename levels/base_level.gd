@@ -25,6 +25,7 @@ func check_win():
 			return
 
 	_code_runner._paused = true
+	_code_runner.disconnect("step_finished", self, "check_win")
 	SoundController.play_sound("Clear Level Sound")
 	emit_signal("cleared")
 
