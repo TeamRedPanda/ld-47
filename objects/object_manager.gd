@@ -5,11 +5,12 @@ enum ObjectType {Empty = -1, Robot, Solid, Movable, Goal, Placeable}
 
 var robot: Robot = null
 var _objects = []
-var placeable_cells = []
+var starter_cells = []
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	starter_cells = get_used_cells()
 	instance_objects(self, $Scenes)
 
 
@@ -36,7 +37,7 @@ func interact(world_position: Vector2, click_type: int):
 		robot.turn(-1 if click_type == BUTTON_LEFT else 1)
 		return
 
-	if cell_type == ObjectType.Placeable && click_type == BUTTON_LEFT:
+	if cell_type == ObjectType.Empty && click_type == BUTTON_LEFT:
 		self.set_cellv(grid_pos, ObjectType.Solid)
 		var obj = $Scenes.solid_object_scene.instance()
 		obj.position = self.map_to_world(grid_pos) + self.cell_size / 2
@@ -45,8 +46,8 @@ func interact(world_position: Vector2, click_type: int):
 		return
 
 	if cell_type == ObjectType.Solid && click_type == BUTTON_RIGHT:
-		if grid_pos in placeable_cells:
-			self.set_cellv(grid_pos, ObjectType.Placeable)
+		if not grid_pos in starter_cells:
+			self.set_cellv(grid_pos, ObjectType.Empty)
 			for obj in _objects:
 				if self.world_to_map(obj.position) == grid_pos:
 					obj.queue_free()
@@ -69,8 +70,6 @@ func instance_objects(map: TileMap, scenes: ObjectScenes):
 				scene_to_instance = scenes.solid_object_scene
 			ObjectType.Movable:
 				scene_to_instance = scenes.movable_object_scene
-			ObjectType.Placeable:
-				placeable_cells.push_back(cell)
 			_:
 				print("Panic: Invalid object at position %s, id %s" %
 					[cell, cell_id])

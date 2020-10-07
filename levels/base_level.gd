@@ -41,8 +41,17 @@ func _input(event: InputEvent) -> void:
 	if not mouseClick.pressed:
 		return
 
-	if not _code_runner.started:
+	if not _code_runner.started and is_interactable(mouseClick.position):
 		$Objects.interact(mouseClick.position, mouseClick.button_index)
+
+
+func is_interactable(position: Vector2) -> bool:
+	var walls := $Walls as TileMap
+
+	if walls.get_cellv(walls.world_to_map(position)) == ObjectType.Empty:
+		return false
+
+	return not is_wall(position)
 
 
 func move(from:Vector2, direction: Vector2) -> bool:
