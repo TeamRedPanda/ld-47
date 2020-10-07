@@ -141,5 +141,5 @@ __meta__ = {
 [connection signal="pause_state" from="Code runner" to="Control buttons/Pause Button" method="_on_pause_state"]
 [connection signal="pressed" from="Control buttons/Play Button" to="Code runner" method="toggle_pause"]
 [connection signal="pressed" from="Control buttons/Pause Button" to="Code runner" method="toggle_pause"]
-[connection signal="pressed" from="Control buttons/Step Button" to="Code runner" method="step"]
+[connection signal="pressed" from="Control buttons/Step Button" to="Code runner" method="step_once"]
 [connection signal="pressed" from="Control buttons/Restart Button" to="." method="restart"]

@@ -39,6 +39,13 @@ func step():
 	emit_signal("step_finished")
 
 
+func step_once():
+	if not _paused:
+		self._paused = true
+	else:
+		yield(step(), "completed")
+
+
 func reset():
 	if get_tree().reload_current_scene() != OK:
 		print("Panic: Somehow the current scene cannot be reloaded.")
