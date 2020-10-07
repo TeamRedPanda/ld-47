@@ -1,5 +1,5 @@
 class_name BaseLevel
-extends Node
+extends Node2D
 
 enum ObjectType {Empty = -1, Robot, Solid, Movable, Goal}
 
@@ -10,10 +10,6 @@ var _goals = []
 
 onready var _code_runner: CodeRunner = $"Code runner"
 onready var _instruction_list: VBoxContainer = $"Code View/Instruction list"
-
-
-func _ready() -> void:
-	$Collision.hide()
 
 
 func register_code(code: Code):
@@ -82,13 +78,11 @@ func try_push_movable(from, towards):
 	return true
 
 func is_wall(position: Vector2) -> bool:
-	var wall_map := get_node("Collision") as TileMap
-	var cell_id := wall_map.get_cellv(position)
+	var space_state := get_world_2d().direct_space_state
+	var wall_map := $Walls as TileMap
+	var point = wall_map.map_to_world(position) + wall_map.cell_size / 2
 
-	if cell_id == -1:
-		return false
-
-	return true
+	return len(space_state.intersect_point(point)) > 0
 
 
 func is_solid(position: Vector2) -> bool:

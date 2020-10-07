@@ -1,10 +1,9 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://maps/tilesets/map_tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://objects/tilesets/object_tileset.tres" type="TileSet" id=2]
 [ext_resource path="res://levels/object_scenes.gd" type="Script" id=3]
 [ext_resource path="res://robot/robot.tscn" type="PackedScene" id=4]
-[ext_resource path="res://collision.png" type="Texture" id=5]
 [ext_resource path="res://objects/object_manager.gd" type="Script" id=6]
 [ext_resource path="res://levels/base_level.gd" type="Script" id=7]
 [ext_resource path="res://levels/code_runner.gd" type="Script" id=8]
@@ -26,22 +25,6 @@
 [ext_resource path="res://ui/sprites/pause_clicked.png" type="Texture" id=24]
 [ext_resource path="res://ui/pause_button.gd" type="Script" id=25]
 
-[sub_resource type="TileSet" id=1]
-0/name = "collision.png 0"
-0/texture = ExtResource( 5 )
-0/tex_offset = Vector2( 0, 0 )
-0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 0, 0, 64, 64 )
-0/tile_mode = 0
-0/occluder_offset = Vector2( 0, 0 )
-0/navigation_offset = Vector2( 0, 0 )
-0/shape_offset = Vector2( 0, 0 )
-0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape_one_way = false
-0/shape_one_way_margin = 0.0
-0/shapes = [  ]
-0/z_index = 0
-
 [node name="Level" type="Node2D"]
 script = ExtResource( 7 )
 
@@ -52,11 +35,6 @@ format = 1
 
 [node name="Goals" type="TileMap" parent="."]
 tile_set = ExtResource( 2 )
-cell_tile_origin = 1
-format = 1
-
-[node name="Collision" type="TileMap" parent="."]
-tile_set = SubResource( 1 )
 cell_tile_origin = 1
 format = 1
 
@@ -137,8 +115,8 @@ texture_hover = ExtResource( 21 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pause_state" from="Code runner" to="Control buttons/Play Button" method="_on_pause_state"]
 [connection signal="pause_state" from="Code runner" to="Control buttons/Pause Button" method="_on_pause_state"]
+[connection signal="pause_state" from="Code runner" to="Control buttons/Play Button" method="_on_pause_state"]
 [connection signal="pressed" from="Control buttons/Play Button" to="Code runner" method="toggle_pause"]
 [connection signal="pressed" from="Control buttons/Pause Button" to="Code runner" method="toggle_pause"]
 [connection signal="pressed" from="Control buttons/Step Button" to="Code runner" method="step_once"]
