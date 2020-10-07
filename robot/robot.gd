@@ -10,6 +10,24 @@ var _look_direction: Vector2 = Vector2(1, 0)
 
 var level
 
+var action_queue = []
+const ACTION_TOLERANCE: int = 300
+
+
+func _process(_delta: float) -> void:
+	if len(action_queue) == 0:
+		return
+
+	if is_animating():
+		return
+
+	match action_queue[0]:
+		{'action': 'turn', 'time': var time, 'steps': var steps}:
+			if time + ACTION_TOLERANCE > OS.get_ticks_msec():
+				turn(steps)
+
+	action_queue.remove(0)
+
 
 func move(steps: int):
 	for _i in range(steps):
@@ -40,6 +58,14 @@ func move(steps: int):
 
 
 func turn(steps: int):
+	if is_animating():
+		action_queue.push_back({
+			'action': 'turn',
+			'time': OS.get_ticks_msec(),
+			'steps': steps
+		})
+		return
+
 	_look_direction = _look_direction.rotated(PI / 2 * steps)
 	SoundController.play_sound("Turn Sound")
 	#warning-ignore:RETURN_VALUE_DISCARDED
@@ -59,3 +85,7 @@ func shake(initial_pos, shake_pos, duration):
 	_tween.interpolate_property(self, "position", shake_pos, initial_pos, duration / 2)
 	_tween.start()
 	yield(_tween, "tween_completed")
+
+
+func is_animating() -> bool:
+	return _tween.is_active()
