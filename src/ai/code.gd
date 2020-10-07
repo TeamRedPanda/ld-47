@@ -15,6 +15,10 @@ func reset():
 	_current_index = 0
 
 
+func ready() -> bool:
+	return not actor.is_animating()
+
+
 func step():
 	var stmt = statements[_current_index]
 	stmt.execute(actor)

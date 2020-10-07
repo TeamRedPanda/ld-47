@@ -28,6 +28,9 @@ func _process(_delta: float) -> void:
 	if _paused:
 		return
 
+	if not code.ready():
+		return
+
 	step()
 
 
