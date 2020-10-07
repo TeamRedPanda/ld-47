@@ -38,13 +38,11 @@ tile_set = ExtResource( 2 )
 cell_tile_origin = 1
 format = 1
 
-[node name="Objects" type="Node2D" parent="."]
-script = ExtResource( 6 )
-
-[node name="Map" type="TileMap" parent="Objects"]
+[node name="Objects" type="TileMap" parent="."]
 tile_set = ExtResource( 2 )
 cell_tile_origin = 1
 format = 1
+script = ExtResource( 6 )
 
 [node name="Scenes" type="Node2D" parent="Objects"]
 script = ExtResource( 3 )
@@ -115,8 +113,8 @@ texture_hover = ExtResource( 21 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pause_state" from="Code runner" to="Control buttons/Pause Button" method="_on_pause_state"]
 [connection signal="pause_state" from="Code runner" to="Control buttons/Play Button" method="_on_pause_state"]
+[connection signal="pause_state" from="Code runner" to="Control buttons/Pause Button" method="_on_pause_state"]
 [connection signal="pressed" from="Control buttons/Play Button" to="Code runner" method="toggle_pause"]
 [connection signal="pressed" from="Control buttons/Pause Button" to="Code runner" method="toggle_pause"]
 [connection signal="pressed" from="Control buttons/Step Button" to="Code runner" method="step_once"]

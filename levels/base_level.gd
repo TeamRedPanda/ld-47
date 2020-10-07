@@ -46,7 +46,7 @@ func _input(event: InputEvent) -> void:
 
 
 func move(from:Vector2, direction: Vector2) -> bool:
-	var object_map := get_node("Objects/Map") as TileMap
+	var object_map := $Objects as TileMap
 
 	from = object_map.world_to_map(from)
 	direction = Vector2(int(direction.x), int(direction.y))
@@ -86,14 +86,14 @@ func is_wall(position: Vector2) -> bool:
 
 
 func is_solid(position: Vector2) -> bool:
-	var object_map := get_node("Objects/Map") as TileMap
+	var object_map := $Objects as TileMap
 	var cell_type := object_map.get_cellv(position)
 
 	return cell_type == ObjectType.Solid
 
 
 func is_movable(position: Vector2) -> bool:
-	var object_map := get_node("Objects/Map") as TileMap
+	var object_map := $Objects as TileMap
 	var cell_type := object_map.get_cellv(position)
 
 	return cell_type == ObjectType.Movable
