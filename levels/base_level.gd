@@ -6,8 +6,6 @@ enum ObjectType {Empty = -1, Robot, Solid, Movable, Goal}
 signal cleared
 signal restart
 
-var _goals = []
-
 onready var _code_runner: CodeRunner = $"Code runner"
 onready var _instruction_list: VBoxContainer = $"Code View/Instruction list"
 
