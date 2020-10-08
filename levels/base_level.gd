@@ -20,7 +20,7 @@ func register_code(code: Code):
 
 
 func check_win():
-	for goal in _goals:
+	for goal in $Objects.goals:
 		if not is_movable(goal):
 			return
 
@@ -28,10 +28,6 @@ func check_win():
 	_code_runner.disconnect("step_finished", self, "check_win")
 	SoundController.play_sound("Clear Level Sound")
 	emit_signal("cleared")
-
-
-func get_goals(map: TileMap):
-	_goals = map.get_used_cells()
 
 
 func _input(event: InputEvent) -> void:

@@ -5,3 +5,4 @@ extends Node2D
 export var robot_scene: PackedScene
 export var solid_object_scene: PackedScene
 export var movable_object_scene: PackedScene
+export var goal_object_scene: PackedScene

@@ -9,5 +9,3 @@ func _ready() -> void:
 	code.add(TurnStatement.new(1))
 	code.add(MoveStatement.new(4))
 	register_code(code)
-
-	get_goals($Goals)

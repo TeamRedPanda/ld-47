@@ -6,12 +6,15 @@ enum ObjectType {Empty = -1, Robot, Solid, Movable, Goal, Placeable}
 var robot: Robot = null
 var _objects = []
 var starter_cells = []
+var goals = []
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	starter_cells = get_used_cells()
 	instance_objects(self, $Scenes)
+
+	assert(len(goals) > 0, "This scene contains no goals.")
 
 
 func is_empty(pos: Vector2) -> bool:
@@ -70,6 +73,9 @@ func instance_objects(map: TileMap, scenes: ObjectScenes):
 				scene_to_instance = scenes.solid_object_scene
 			ObjectType.Movable:
 				scene_to_instance = scenes.movable_object_scene
+			ObjectType.Goal:
+				scene_to_instance = scenes.goal_object_scene
+				goals.push_back(cell)
 			_:
 				print("Panic: Invalid object at position %s, id %s" %
 					[cell, cell_id])

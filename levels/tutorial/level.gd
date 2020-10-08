@@ -12,5 +12,3 @@ func _ready() -> void:
 	code.add(TurnStatement.new(2))
 
 	register_code(code)
-
-	get_goals($Goals)
